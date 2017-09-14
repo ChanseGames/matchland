@@ -1,6 +1,6 @@
 buildscript {
     ext {
-      kotlinVersion = '1.1.4'
+      kotlinVersion = '1.1.4-3'
       androidPluginVersion = '2.3.3'
     }
     
@@ -9,9 +9,10 @@ buildscript {
         mavenCentral()
         jcenter()
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        google()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:$androidPluginVersion"
+        classpath 'com.android.tools.build:gradle:3.0.0-beta5'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
     }
 }
@@ -34,6 +35,7 @@ allprojects {
         jcenter()
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
         maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+        google()
     }
 }
 
