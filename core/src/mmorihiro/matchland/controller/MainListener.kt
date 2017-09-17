@@ -19,7 +19,6 @@ import mmorihiro.matchland.view.HomeView
 import mmorihiro.matchland.view.StageView
 import mmorihiro.matchland.view.View
 
-
 class MainListener : ApplicationAdapter() {
     private val topView by lazy { View() }
     private var currentViews: List<View> = listOf()
