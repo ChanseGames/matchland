@@ -40,18 +40,6 @@ allprojects {
     }
 }
 
-project(":desktop") {
-    apply plugin: "kotlin"
-
-    dependencies {
-        compile project(":core")
-        compile "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
-        compile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
-        compile "com.badlogicgames.gdx:gdx-tools:$gdxVersion"
-        compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
-    }
-}
-
 project(":android") {
     apply plugin: "android"
     apply plugin: "kotlin-android"
